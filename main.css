@@ -1,0 +1,35 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+}
+
+.outer-container {
+    display: flex; 
+    flex-direction: row;
+    flex-grow: 2; 
+    align-content: stretch; 
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.inner-container {
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-content: space-between
+}
+
+.slider-container {
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+}
