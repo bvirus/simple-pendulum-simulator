@@ -16,14 +16,16 @@ canvas {
     align-content: stretch; 
     justify-content: space-around;
     padding: 1em;
+    
 }
 
 .inner-container {
-    flex-grow: 1; 
+    flex: 1;
+    flex-wrap: wrap;
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
-    align-content: space-between
+    align-content: stretch;
 }
 
 .slider-container {
@@ -32,4 +34,10 @@ canvas {
     flex-direction: row;
     align-content: space-around;
     justify-content: center;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
