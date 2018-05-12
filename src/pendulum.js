@@ -15,6 +15,6 @@ export function Pendulum(props) {
 
     return (<svg id="screen" width={props.width} height={props.height}>
         <line x1={centerX} y1={centerY} x2={x} y2={y} style={{stroke:"black", strokeWidth:2}} />
-        <circle cx={x} cy={y} r="2rem" fill="black" />
+        <circle cx={x} cy={y} r="5%" fill="black" />
     </svg>);
 }
