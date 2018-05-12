@@ -8,24 +8,7 @@
 	<link rel="stylesheet" href="node_modules/nouislider/distribute/nouislider.min.css">
 </head>
 <body style="padding:none;margin:none;width:100%;height:100%;display:flex;flex-direction: column;">
-	<div class="outer-container">
-		<div class="inner-container">
-			<div class="slider-container">
-				<label for="string-slider" style="flex-grow: 1">Length of string</label>
-				<div id="string-slider" style="flex-grow: 3"></div>
-			</div>
-			<div class="slider-container">
-				<label for="amp-slider" style="flex-grow: 1">Amplitude</label>
-				<div id="amp-slider" style="flex-grow: 3"></div>
-			</div>	
-		</div>
-		<div style="flex-grow: 2"></div>
-	</div>
-	<div id="container" style="display:block; flex-grow: 5;margin:0;padding:0;">
-		<canvas id="screen"></canvas>
-	</div>	
-	<script type="text/javascript"
-	src="node_modules/nouislider/distribute/nouislider.min.js"></script>
-	<script type="text/javascript" src="pendulum.js"></script>
+	<div id="app" class="pass-through"></div>
+	<script type="text/javascript" src="dist/bundle.js"></script>
 </body>
 </html>
