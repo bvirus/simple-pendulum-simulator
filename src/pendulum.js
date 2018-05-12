@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 export function Pendulum(props) {
     let w = props.width;
     let h = props.height;
-    let m = Math.min(w, h);
+    let m = Math.min(w, h)/2;
     let c = (2*Math.PI)/(props.maxTime);
     let pos = (props.amplitude) * Math.sin(c * props.time);
     let centerX = w*0.5;

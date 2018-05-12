@@ -25,8 +25,11 @@ export class App extends Component {
     getDimensions = (container) => {
         this.setState({ container });
         listener = window.addEventListener('resize', () => {
-            console.log('resize')
-            this.setState({ penWidth: container.clientWidth, penHeight: container.clientHeight })
+            this.setState({ 
+                penWidth: container.clientWidth, 
+                penHeight: container.clientHeight }, () => {
+                    console.log('resize', this.state.penWidth, this.state.penHeight)
+                })
         })
         this.setState({ penWidth: container.clientWidth, penHeight: container.clientHeight })
     }
