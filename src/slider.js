@@ -11,7 +11,6 @@ export class Slider extends Component {
         }
     }
     createSlider = (element) => {
-        console.log('created slider')
         create(element, {...this.props});
         element.noUiSlider.on('slide', this.props.onChange);
         this.setState({element});
