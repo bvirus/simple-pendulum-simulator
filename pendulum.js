@@ -6,7 +6,7 @@ let ctx = canvas.getContext("2d");
 ctx.fillStyle = 'black';
 
 let initialTime = 0;
-let initX = 300;
+let initX = 400;
 let initY = 10;
 let radius = 200;
 let amp = (Math.PI)/5;
